@@ -11,7 +11,9 @@ public interface ShiroUserService {
      * @param username 用户登录名
      * @return 用户信息
      */
-    ShiroUser getUserInfoByUserName(String username);
+    default ShiroUser getUserInfoByUserName(String username) {
+        return null;
+    }
 
     /**
      * 根据第三方平台信息获取用户信息
@@ -20,6 +22,8 @@ public interface ShiroUserService {
      * @param platformUserId 平台用户id
      * @return 用户信息
      */
-    ShiroUser getUserInfoByPlatformInfo(String platform, String platformUserId);
+    default ShiroUser getUserInfoByPlatformInfo(String platform, String platformUserId) {
+        return null;
+    }
 
 }
