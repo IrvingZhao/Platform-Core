@@ -62,7 +62,7 @@
 
 ### 第四步：声明资源加载工厂ResourceFactory
 
-
+> `cn.irving.zhao.platform.core.shiro.resources.ShiroResourceService` 用于获取资源列表，在使用`cn.irving.zhao.platform.core.shiro.resource` 时，需预先创建相关资源工厂
 
 ### 第五步：声明ShiroFilterFactory并指定SecurityManager
 
