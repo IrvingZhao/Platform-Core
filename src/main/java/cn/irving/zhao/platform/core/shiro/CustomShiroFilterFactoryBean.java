@@ -35,4 +35,12 @@ public class CustomShiroFilterFactoryBean extends ShiroFilterFactoryBean {
     public void setEnableSingleMatch(Boolean enableSingleMatch) {
         this.enableSingleMatch = enableSingleMatch;
     }
+
+    public LoginUrlGenerator getUrlGenerator() {
+        return urlGenerator;
+    }
+
+    public void setUrlGenerator(LoginUrlGenerator urlGenerator) {
+        this.urlGenerator = urlGenerator;
+    }
 }
